@@ -1,0 +1,88 @@
+/*===================== По секциям================*/
+/* ============features=========== */
+
+.section-features {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+/* скроем заголовок */
+.hide {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+.section-title {
+  margin: 0;
+  margin-bottom: 72px;
+
+  color: $navy-blue;
+
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+}
+.features-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.features-list .item {
+  width: calc((100% - 72px) / 4);
+  margin-right: 24px;
+  padding-top: 24px;
+}
+
+.features-list .item:nth-child(4n) {
+  margin-right: 0;
+}
+
+.features-list .title {
+  margin: 0;
+  margin-top: 8px;
+  margin-bottom: 8px;
+
+  color: $navy-blue;
+
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.features-list .text {
+  margin: 0;
+}
+
+/* ================ICONS FEATURES============= */
+
+.features-list .item::before {
+  display: block;
+  content: "";
+  height: 112px;
+
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.features-list .icon-strategy::before {
+  background-image: url(../../images/antenna_1.svg), $bcg-cloud;
+}
+
+.features-list .icon-punctuality::before {
+  background-image: url(../../images/clock_1.svg), $bcg-cloud;
+}
+
+.features-list .icon-diligency::before {
+  background-image: url(../../images/diagram_1.svg), $bcg-cloud;
+}
+
+.features-list .icon-technologies::before {
+  background-image: url(../../images/astronaut_1.svg), $bcg-cloud;
+}

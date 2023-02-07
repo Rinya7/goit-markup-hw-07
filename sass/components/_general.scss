@@ -1,0 +1,82 @@
+/* ==================Section first==================*/
+
+.section-general {
+  text-align: center;
+  padding-top: 188px;
+  padding-bottom: 188px;
+  background-color: $navy-blue;
+  height: 600px;
+  max-width: 1440px;
+  margin-right: auto;
+  margin-left: auto;
+
+  background-image: $bcg-gray, url(../../images/people_office_1.jpg);
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.mein-title {
+  margin: 0 auto;
+  width: 494px;
+  margin-bottom: 48px;
+
+  color: $white;
+
+  font-size: 56px;
+  line-height: 1.07;
+}
+
+/* ===========================BUTTONS ===========================*/
+
+/* Макет для кнопок два вида, order, normal и activ */
+
+.button {
+  border-radius: 4px;
+  padding: 12px 24px;
+  border: 1px solid $cornflower;
+
+  color: $iris;
+  background-color: $cloud;
+  font-weight: 500;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+
+  transition: color 250ms $time-function, background-color 250ms $time-function,
+    box-shadow 250ms $time-function;
+}
+.button:is(:hover, :focus) {
+  color: $white;
+  background-color: $ocean;
+  box-shadow: $shadow-btn;
+  border: 1px solid transparent;
+}
+.button.order {
+  border-radius: 4px;
+  padding: 16px 32px;
+  min-width: 169px;
+  border: 1px solid transparent;
+
+  color: $white;
+  background-color: $iris;
+
+  font-family: inherit;
+  font-weight: 500;
+  font-size: inherit;
+  line-height: inherit;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+
+  position: background-color 250ms $time-function;
+}
+.button.order:is(:hover, :focus) {
+  background-color: $ocean;
+}

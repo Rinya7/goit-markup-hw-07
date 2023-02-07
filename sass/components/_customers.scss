@@ -1,0 +1,49 @@
+/*===============================Customers===========================*/
+
+.section-customers {
+  padding-top: 130px;
+  padding-bottom: 120px;
+}
+
+.customers-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.customers-list .item {
+  width: 168px;
+  height: 88px;
+}
+
+.link-custom {
+  width: 100%;
+  height: 100%;
+  padding: 16px 32px;
+  border: 1px solid $light-slate;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: border-color 250ms $time-function;
+}
+
+.customers-list .item:not(:last-child) {
+  margin-right: 24px;
+}
+
+.logo-brend {
+  fill: $light-slate;
+  transition: fill 250ms $time-function;
+}
+
+/* При ховере меняется цвет рамки */
+
+.link-custom:is(:hover, :focus) {
+  border-color: $ocean;
+}
+/* при ховере идет обращение к иконнке и меняется ее цвет. */
+
+.link-custom:is(:hover, :focus) .logo-brend {
+  fill: $ocean;
+}
