@@ -3,13 +3,15 @@ body {
   color: $slate;
 
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 1.33;
+
   font-family: "Roboto", sans-serif;
   letter-spacing: 0.02em;
 }
 
 header {
   border-bottom: 1px solid $cornflower;
+  box-shadow: $header-shadow;
 }
 
 img {
@@ -30,8 +32,8 @@ img {
 }
 
 .container {
-  width: 1158px;
-  padding: 0 15px;
+  min-width: 320px;
+  padding: 0 16px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -45,4 +47,27 @@ img {
   overflow: hidden;
   border: 0;
   clip: rect(0 0 0 0);
+}
+
+//===========container for desctop===============
+
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 396px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 736px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  body {
+    line-height: 1.5;
+  }
+  .container {
+    max-width: 1158px;
+  }
 }

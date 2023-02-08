@@ -1,0 +1,226 @@
+//===============Mobile
+
+header {
+  border-bottom: 1px solid $cornflower;
+}
+
+/* ==========================Site nav=============== */
+.site-nav {
+  display: flex;
+}
+
+.site-nav .logo {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+/*============= лого левая часть======== */
+.logo-web {
+  color: $iris;
+
+  font-family: "Raleway";
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.3;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.logo-web:focus {
+  color: $ocean;
+}
+.logo {
+  color: $navy-blue;
+  text-transform: uppercase;
+
+  font-family: "Raleway";
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.3;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.logo:focus {
+  color: $ocean;
+}
+
+.nav-ul,
+.header-contacts {
+  display: none;
+}
+
+/* ========================ICONS HEADER===================== */
+
+/* СДЕЛАЛ ЧЕРЕЗ ФОН, НО ТАК НЕ РАБОТАЕТ ХОВЕР */
+
+/*.header-contacts .mail::before {
+    content: "";
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+  
+    background-image: url("../images/mail.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .header-contacts .phone::before {
+    content: "";
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+  
+    background-image: url("../images/phone.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }*/
+
+/* ===============ICONS HEADER ==END============ */
+
+@media screen and (min-width: 480px) {
+}
+
+//=====================================TABLET===========================================
+@media screen and (min-width: 768px) {
+  .header-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .site-nav .logo {
+    margin-right: 120px;
+  }
+  .nav-ul {
+    display: flex;
+  }
+  .nav-ul .item:not(:last-child) {
+    margin-right: 40px;
+  }
+
+  .nav-ul .item {
+    position: relative;
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+  /* ===================ПОДЧЕРКИВАНИЕ ТЕКУЩЕЙ СТРАНИЦЫ================= */
+  .link.current::after {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: $ocean;
+    border-radius: 2px;
+  }
+
+  .site-nav .link {
+    display: block;
+
+    color: $navy-blue;
+    transition: color 250ms $time-function;
+
+    font-weight: 500;
+  }
+
+  .site-nav .link:is(:hover, :focus) {
+    color: $ocean;
+  }
+
+  .header-contacts {
+    display: block;
+    margin-top: 24px;
+    margin-bottom: 10px;
+  }
+
+  //  .header-contacts .item:not(:last-child) {
+  //    margin-right: 40px;
+  //  }
+
+  .header-contacts .link {
+    //display: inline-flex;
+    //align-items: center;
+
+    transition: color 250ms $time-function;
+
+    color: $slate;
+    font-weight: 400;
+    font-size: 12px;
+  }
+
+  .header-contacts .link:is(:hover, :focus) {
+    color: $ocean;
+  }
+}
+
+//========================================DESCTOP============================================
+@media screen and (min-width: 1200px) {
+  .site-nav .logo {
+    margin-right: 76px;
+  }
+
+  .nav-ul .item:not(:last-child) {
+    margin-right: 40px;
+    position: relative;
+  }
+
+  /* ===================ПОДЧЕРКИВАНИЕ ТЕКУЩЕЙ СТРАНИЦЫ================= */
+  .link.current::after {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: $ocean;
+    border-radius: 2px;
+  }
+
+  .site-nav .link {
+    display: block;
+
+    color: $navy-blue;
+    transition: color 250ms $time-function;
+
+    font-weight: 500;
+  }
+
+  .site-nav .link:is(:hover, :focus) {
+    color: $ocean;
+  }
+
+  .header-contacts {
+    display: flex;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+
+  .header-contacts .item:not(:last-child) {
+    margin-right: 40px;
+  }
+
+  .header-contacts .link {
+    display: inline-flex;
+    align-items: center;
+    padding-top: 24px;
+    padding-bottom: 24px;
+
+    color: $slate;
+
+    transition: color 250ms $time-function;
+
+    font-weight: 400;
+    line-height: 1.5;
+  }
+
+  .header-contacts .link:is(:hover, :focus) {
+    color: $ocean;
+  }
+}
