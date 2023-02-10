@@ -15,15 +15,15 @@ header {
 }
 
 /*============= лого левая часть======== */
+
+.logo-web,
+.logo {
+  font-family: "Raleway";
+  @include font(18px, 800, 24px, 0.03em);
+  text-transform: uppercase;
+}
 .logo-web {
   color: $iris;
-
-  font-family: "Raleway";
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 1.3;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
 }
 
 .logo-web:focus {
@@ -31,14 +31,6 @@ header {
 }
 .logo {
   color: $navy-blue;
-  text-transform: uppercase;
-
-  font-family: "Raleway";
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 1.3;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
 }
 
 .logo:focus {
@@ -217,7 +209,7 @@ header {
     transition: color 250ms $time-function;
 
     font-weight: 400;
-    line-height: 1.5;
+    font-size: 16px;
   }
 
   .header-contacts .link:is(:hover, :focus) {

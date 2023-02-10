@@ -1,12 +1,13 @@
 @import "./utils/vars";
 @import "./base/normalize";
+@import "./utils/mixins";
 @import "./utils/placeholders";
 @import "./components/a-header";
-//@import "./components/b-general";
+@import "./components/b-general";
 //@import "./components/c-button";
-//@import "./components/d-features";
-//@import "./components/e-work";
-//@import "./components/f-team";
+@import "./components/d-features";
+@import "./components/e-work";
+@import "./components/f-team";
 //@import "./components/g-customers";
 //@import "./components/h-footer";
 //@import "./components/i-modal";

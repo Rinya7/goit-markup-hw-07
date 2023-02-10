@@ -1,19 +1,32 @@
 /* ==============What are we doing================= */
-
 .section-work {
-  padding-bottom: 120px;
+  display: none;
+}
+@media screen and (min-width: 480px) {
 }
 
-.work-list {
-  display: flex;
-  flex-wrap: wrap;
+@media screen and (min-width: 768px) {
 }
 
-.work-list .item {
-  width: calc((100% - 48px) / 3);
-  margin-right: 24px;
-}
+@media screen and (min-width: 1200px) {
+  .section-work {
+    display: block;
+  }
+  .section-work {
+    padding-bottom: 120px;
+  }
 
-.work-list .item:nth-child(3n) {
-  margin-right: 0;
+  .work-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .work-list .item {
+    width: calc((100% - 48px) / 3);
+    margin-right: 24px;
+  }
+
+  .work-list .item:nth-child(3n) {
+    margin-right: 0;
+  }
 }

@@ -1,27 +1,20 @@
 /* ===========================Our Team========================= */
 .section-team {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 96px;
+  padding-bottom: 128px;
 
   background-color: $cloud;
 }
-.team-list {
+.container-team {
+  min-width: 320px;
+  padding: 0 82px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.info .social {
   display: flex;
-  flex-wrap: wrap;
-}
-
-.team-list .worker {
-  width: calc((100% - 72px) / 4);
-  margin-right: 24px;
-
-  border-radius: 0px 0px 4px 4px;
-
-  background-color: $white;
-  box-shadow: $shadow;
-}
-
-.team-list .worker:nth-child(4n) {
-  margin: 0;
+  justify-content: space-between;
 }
 
 .team-list .title {
@@ -44,12 +37,7 @@
 }
 
 .info {
-  padding: 32px 16px;
-}
-
-.info .social {
-  display: flex;
-  justify-content: space-between;
+  padding: 32px 14px;
 }
 
 .social .item {
@@ -77,6 +65,61 @@
   background-color: $ocean;
 }
 
-.social .item:not(:last-child) {
-  margin-right: 24px;
+//.social .item:not(:last-child) {
+//  margin-right: 24px;
+//}
+
+@media screen and (max-width: 768px) {
+  .team-list .worker:not(:last-child) {
+    margin-bottom: 72px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .container-team {
+    max-width: 396px;
+  }
+}
+//=====================================TABLET===========================================
+@media screen and (min-width: 768px) {
+  .container-team {
+    padding: 0 108px;
+    max-width: 736px;
+  }
+  .team-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -12px;
+  }
+
+  .team-list .worker {
+    width: calc((100% - 48px) / 2);
+    margin: 12px;
+  }
+}
+
+//========================================DESCTOP===========================================
+@media screen and (min-width: 1200px) {
+  .container-team {
+    padding: 0 15px;
+    max-width: 1158px;
+  }
+  .section-team {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .team-list .worker {
+    width: calc((100% - 96px) / 4);
+    //margin-right: 24px;
+
+    border-radius: 0px 0px 4px 4px;
+
+    background-color: $white;
+    box-shadow: $shadow;
+  }
+
+  //  .team-list .worker:nth-child(4n) {
+  //    margin: 0;
+  //  }
 }

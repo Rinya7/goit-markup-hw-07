@@ -1,16 +1,18 @@
-/* ==================Section first==================*/
-
 .section-general {
-  text-align: center;
-  padding-top: 188px;
-  padding-bottom: 188px;
-  background-color: $navy-blue;
-  height: 600px;
-  max-width: 1440px;
-  margin-right: auto;
-  margin-left: auto;
-
+  padding-top: 112px;
+  padding-bottom: 112px;
   background-image: $bcg-gray, url(../../images/people_office_1.jpg);
+  background-color: $navy-blue;
+  background-position: 50% 50%;
+}
+
+.hero {
+  text-align: center;
+
+  //  height: 432px;
+  //  width: 428px;
+  //  margin-right: auto;
+  //  margin-left: auto;
 
   background-size: cover;
   background-repeat: no-repeat;
@@ -19,27 +21,26 @@
 
 .mein-title {
   margin: 0 auto;
-  width: 494px;
-  margin-bottom: 48px;
+  width: 318px;
+  margin-bottom: 72px;
 
   color: $white;
-
-  font-size: 56px;
-  line-height: 1.07;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.011;
 }
-
 /* ===========================BUTTONS ===========================*/
 
 /* Макет для кнопок два вида, order, normal и activ */
-
 .button {
   border-radius: 4px;
-  padding: 12px 24px;
+  padding: 16px 32px;
   border: 1px solid $cornflower;
 
   color: $iris;
   background-color: $cloud;
   font-weight: 500;
+  line-height: 1.5;
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
@@ -51,14 +52,7 @@
   transition: color 250ms $time-function, background-color 250ms $time-function,
     box-shadow 250ms $time-function;
 }
-.button:is(:hover, :focus) {
-  color: $white;
-  background-color: $ocean;
-  box-shadow: $shadow-btn;
-  border: 1px solid transparent;
-}
 .button.order {
-  border-radius: 4px;
   padding: 16px 32px;
   min-width: 169px;
   border: 1px solid transparent;
@@ -77,6 +71,58 @@
 
   position: background-color 250ms $time-function;
 }
-.button.order:is(:hover, :focus) {
-  background-color: $ocean;
+@media screen and (min-width: 480px) {
 }
+//=====================================TABLET===========================================
+@media screen and (min-width: 768px) {
+  .section-general {
+    padding-bottom: 108px;
+  }
+  .hero {
+    width: 768px;
+  }
+
+  .mein-title {
+    margin: 0 auto;
+    width: 494px;
+    margin-bottom: 40px;
+
+    color: $white;
+
+    font-size: 56px;
+    line-height: 1.07;
+  }
+}
+//========================================DESCTOP============================================
+@media screen and (min-width: 1200px) {
+  .section-general {
+    padding-top: 188px;
+    padding-bottom: 188px;
+
+    height: 600px;
+  }
+  .hero {
+    width: 1440px;
+  }
+
+  .mein-title {
+    margin-bottom: 48px;
+  }
+
+  /* ===========================BUTTONS ===========================*/
+
+  /* Макет для кнопок два вида, order, normal и activ */
+
+  .button:is(:hover, :focus) {
+    color: $white;
+    background-color: $ocean;
+    box-shadow: $shadow-btn;
+    border: 1px solid transparent;
+  }
+
+  .button.order:is(:hover, :focus) {
+    background-color: $ocean;
+  }
+}
+
+/* ==================Section first==================*/
