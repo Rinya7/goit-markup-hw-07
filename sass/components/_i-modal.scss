@@ -24,8 +24,6 @@
   transition: transform 250ms $time-function;
   opacity: 1;
 
-  width: 408px;
-
   background-color: $bcg-modal;
 
   padding: 72px 24px 24px 24px;
@@ -196,4 +194,28 @@ textarea {
 
 .privacy-link {
   text-decoration: underline;
+}
+
+@media screen and (max-width: 480px) {
+  .form-order {
+    min-width: 320px;
+    width: 95%;
+
+    max-width: 392px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .form-order {
+    width: 392px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .form-order {
+    width: 408px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
 }

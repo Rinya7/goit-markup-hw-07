@@ -7,9 +7,17 @@
 }
 .container-team {
   min-width: 320px;
-  padding: 0 82px;
+  max-width: 396px;
+  padding: 0 70px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.team-list .worker {
+  border-radius: 0px 0px 4px 4px;
+
+  background-color: $white;
+  box-shadow: $shadow;
 }
 
 .info .social {
@@ -69,15 +77,16 @@
 //  margin-right: 24px;
 //}
 
-@media screen and (max-width: 768px) {
-  .team-list .worker:not(:last-child) {
-    margin-bottom: 72px;
-  }
-}
-
 @media screen and (min-width: 480px) {
   .container-team {
     max-width: 396px;
+    padding: 0 82px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .team-list .worker:not(:last-child) {
+    margin-bottom: 72px;
   }
 }
 //=====================================TABLET===========================================
@@ -112,11 +121,6 @@
   .team-list .worker {
     width: calc((100% - 96px) / 4);
     //margin-right: 24px;
-
-    border-radius: 0px 0px 4px 4px;
-
-    background-color: $white;
-    box-shadow: $shadow;
   }
 
   //  .team-list .worker:nth-child(4n) {

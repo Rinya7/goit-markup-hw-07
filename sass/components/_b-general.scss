@@ -1,9 +1,17 @@
 .section-general {
   padding-top: 112px;
   padding-bottom: 112px;
-  background-image: $bcg-gray, url(../../images/people_office_1.jpg);
+  background-image: $bcg-gray, url(../../images/people_office_mob.jpg);
   background-color: $navy-blue;
   background-position: 50% 50%;
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .section-general {
+    background-image: $bcg-gray, url(../../images/people_office_mob_2x.jpg);
+  }
 }
 
 .hero {
@@ -72,11 +80,31 @@
   position: background-color 250ms $time-function;
 }
 @media screen and (min-width: 480px) {
+  .section-general {
+    background-image: $bcg-gray, url(../../images/people_office_tab.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .section-general {
+      background-image: $bcg-gray, url(../../images/people_office_tab_2x.jpg);
+    }
+  }
 }
 //=====================================TABLET===========================================
 @media screen and (min-width: 768px) {
   .section-general {
     padding-bottom: 108px;
+    background-image: $bcg-gray, url(../../images/people_office.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .section-general {
+      background-image: $bcg-gray, url(../../images/people-office_2x.jpg);
+    }
   }
   .hero {
     width: 768px;

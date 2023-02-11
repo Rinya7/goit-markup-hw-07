@@ -1,8 +1,11 @@
 /* ===============================footer=========================== */
-
 .footer-color {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  /* делаем одну колонки */
+  display: block;
+  text-align: center;
+
+  padding-top: 96px;
+  padding-bottom: 96px;
   background-color: $navy-blue;
 }
 
@@ -22,16 +25,16 @@
 }
 
 .foot .text {
-  margin: 0;
-
   color: $cornflower;
+  margin: 0;
 }
 
 .foot {
   width: 264px;
-  margin-right: 120px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 72px;
 }
-
 .footer-title {
   margin: 0;
   margin-bottom: 16px;
@@ -41,17 +44,10 @@
   font-weight: 500;
   font-size: 16px;
 }
-/* делаем две колонки */
-.footer-column {
-  display: flex;
-}
-
-/* ставим иконки в один ряд */
 
 .footer-social .list-social {
-  display: flex;
-  align-items: center;
-  margin-right: 80px;
+  display: inline-flex;
+  //  margin-right: 16px;
 }
 
 .list-social .item:not(:last-child) {
@@ -79,18 +75,6 @@
   fill: $cloud;
 }
 
-.footer-link-social:is(:hover, :focus) {
-  background-color: $green;
-}
-
-/* =====================FOOTER-SUBSCRIBE======================= */
-
-.form-subscribe {
-  display: inline-flex;
-  align-items: flex-end;
-  height: 80px;
-}
-
 .subscribe-title {
   display: block;
 
@@ -102,7 +86,7 @@
 
 .label {
   display: block;
-  margin-right: 24px;
+  //  margin-right: 24px;
 }
 
 .input-email {
@@ -143,20 +127,165 @@
   letter-spacing: 0.04em;
 }
 
-.btn-subscribe:is(:hover, :focus) {
-  border: 0;
+@media screen and (min-width: 480px) {
 }
 
-.btn-subscribe::after {
-  content: "";
-  width: 24px;
-  height: 24px;
-  margin-left: 16px;
-  margin-right: 24px;
-  border-color: inherit;
+@media screen and (max-width: 768px) {
+  .label {
+    margin-bottom: 16px;
+  }
+  .input-email {
+    width: 100%;
+  }
 
-  background-image: url("../../images/telegram.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
+  .footer-social {
+    margin-bottom: 72px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer-color {
+    text-align: unset;
+  }
+
+  .footer-tab {
+    display: inline-flex;
+    flex-wrap: wrap;
+    text-align: left;
+    margin-bottom: 72px;
+    margin-left: 92px;
+  }
+  .foot {
+    margin-right: 24px;
+    margin-bottom: 0;
+  }
+  .label {
+    margin-right: 24px;
+  }
+  .footer-tab {
+    margin-left: 92px;
+  }
+
+  .form-subscribe {
+    display: inline-flex;
+    align-items: end;
+    margin-left: 92px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-tab {
+    flex-wrap: nowrap;
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+  .footer-color {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .foot {
+    margin-right: 120px;
+  }
+
+  /* делаем две колонки */
+  .footer-column {
+    display: flex;
+  }
+
+  .footer-column .footer-title,
+  .footer-column .subscribe-title {
+    text-align: left;
+  }
+
+  /* ставим иконки в один ряд */
+
+  .footer-social .list-social {
+    display: flex;
+    align-items: center;
+    margin-right: 80px;
+  }
+
+  .footer-link-social:is(:hover, :focus) {
+    background-color: $green;
+  }
+
+  /* =====================FOOTER-SUBSCRIBE======================= */
+
+  .form-subscribe {
+    display: inline-flex;
+    align-items: flex-end;
+    height: 80px;
+    margin-left: 0;
+  }
+
+  //  .subscribe-title {
+  //    display: block;
+
+  //    font-weight: 500;
+  //    color: $white;
+  //    margin: 0;
+  //    margin-bottom: 16px;
+  //  }
+
+  .label {
+    //  display: block;
+    margin-right: 24px;
+  }
+
+  //  .input-email {
+  //    margin: 0;
+  //    width: 264px;
+  //    height: 40px;
+  //    padding-left: 16px;
+  //    padding-top: 8px;
+  //    padding-bottom: 8px;
+  //    background: inherit;
+
+  //    border: 1px solid $border-input-email;
+  //    filter: drop-shadow(0px 4px 4px $border-input-email-dropshadow);
+  //    border-radius: 4px;
+
+  //    font-weight: 400;
+  //    color: $white;
+  //    font-size: inherit;
+  //    line-height: inherit;
+  //    font-family: inherit;
+  //    letter-spacing: inherit;
+  //  }
+
+  //  .btn-subscribe {
+  //    display: inline-flex;
+  //    min-width: 140px;
+  //    height: 40px;
+  //    align-items: center;
+  //    padding-left: 24px;
+  //    padding-top: 8px;
+  //    padding-bottom: 8px;
+  //    border: 0;
+  //    cursor: pointer;
+
+  //    background: $bodrer-btn-subscribe;
+  //    border-radius: 4px;
+  //    color: $white;
+  //    letter-spacing: 0.04em;
+  //  }
+
+  .btn-subscribe:is(:hover, :focus) {
+    border: 0;
+  }
+
+  .btn-subscribe::after {
+    content: "";
+    width: 24px;
+    height: 24px;
+    margin-left: 16px;
+    margin-right: 24px;
+    border-color: inherit;
+
+    background-image: url("../../images/telegram.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }

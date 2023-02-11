@@ -258,8 +258,9 @@ header {
 
 img {
   display: block;
-  width: 100%;
+  max-width: 100%;
   height: auto;
+  width: 100%;
 }
 
 .link,
@@ -289,6 +290,15 @@ img {
   overflow: hidden;
   border: 0;
   clip: rect(0 0 0 0);
+}
+
+.section-title {
+  margin: 0;
+  margin-bottom: 72px;
+  color: #2e2f42;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
 }
 
 @media screen and (min-width: 480px) {
@@ -418,8 +428,11 @@ img {
 
 /* ===============================footer=========================== */
 .footer-color {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  /* делаем одну колонки */
+  display: block;
+  text-align: center;
+  padding-top: 96px;
+  padding-bottom: 96px;
   background-color: #2e2f42;
 }
 
@@ -438,13 +451,15 @@ img {
 }
 
 .foot .text {
-  margin: 0;
   color: #e7e9fc;
+  margin: 0;
 }
 
 .foot {
   width: 264px;
-  margin-right: 120px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 72px;
 }
 
 .footer-title {
@@ -455,16 +470,8 @@ img {
   font-size: 16px;
 }
 
-/* делаем две колонки */
-.footer-column {
-  display: flex;
-}
-
-/* ставим иконки в один ряд */
 .footer-social .list-social {
-  display: flex;
-  align-items: center;
-  margin-right: 80px;
+  display: inline-flex;
 }
 
 .list-social .item:not(:last-child) {
@@ -491,17 +498,6 @@ img {
   fill: #f4f4fd;
 }
 
-.footer-link-social:is(:hover, :focus) {
-  background-color: #31d0aa;
-}
-
-/* =====================FOOTER-SUBSCRIBE======================= */
-.form-subscribe {
-  display: inline-flex;
-  align-items: flex-end;
-  height: 80px;
-}
-
 .subscribe-title {
   display: block;
   font-weight: 500;
@@ -512,7 +508,6 @@ img {
 
 .label {
   display: block;
-  margin-right: 24px;
 }
 
 .input-email {
@@ -550,19 +545,97 @@ img {
   letter-spacing: 0.04em;
 }
 
-.btn-subscribe:is(:hover, :focus) {
-  border: 0;
+@media screen and (max-width: 768px) {
+  .label {
+    margin-bottom: 16px;
+  }
+  .input-email {
+    width: 100%;
+  }
+  .footer-social {
+    margin-bottom: 72px;
+  }
 }
-
-.btn-subscribe::after {
-  content: "";
-  width: 24px;
-  height: 24px;
-  margin-left: 16px;
-  margin-right: 24px;
-  border-color: inherit;
-  background-image: url("../../images/telegram.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
+@media screen and (min-width: 768px) {
+  .footer-color {
+    text-align: unset;
+  }
+  .footer-tab {
+    display: inline-flex;
+    flex-wrap: wrap;
+    text-align: left;
+    margin-bottom: 72px;
+    margin-left: 92px;
+  }
+  .foot {
+    margin-right: 24px;
+    margin-bottom: 0;
+  }
+  .label {
+    margin-right: 24px;
+  }
+  .footer-tab {
+    margin-left: 92px;
+  }
+  .form-subscribe {
+    display: inline-flex;
+    align-items: end;
+    margin-left: 92px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-tab {
+    flex-wrap: nowrap;
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+  .footer-color {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .foot {
+    margin-right: 120px;
+  }
+  /* делаем две колонки */
+  .footer-column {
+    display: flex;
+  }
+  .footer-column .footer-title,
+  .footer-column .subscribe-title {
+    text-align: left;
+  }
+  /* ставим иконки в один ряд */
+  .footer-social .list-social {
+    display: flex;
+    align-items: center;
+    margin-right: 80px;
+  }
+  .footer-link-social:is(:hover, :focus) {
+    background-color: #31d0aa;
+  }
+  /* =====================FOOTER-SUBSCRIBE======================= */
+  .form-subscribe {
+    display: inline-flex;
+    align-items: flex-end;
+    height: 80px;
+    margin-left: 0;
+  }
+  .label {
+    margin-right: 24px;
+  }
+  .btn-subscribe:is(:hover, :focus) {
+    border: 0;
+  }
+  .btn-subscribe::after {
+    content: "";
+    width: 24px;
+    height: 24px;
+    margin-left: 16px;
+    margin-right: 24px;
+    border-color: inherit;
+    background-image: url("../../images/telegram.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }/*# sourceMappingURL=portfolio.css.map */
