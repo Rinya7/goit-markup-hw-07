@@ -1,9 +1,15 @@
 .section-general {
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
   padding-top: 112px;
   padding-bottom: 112px;
   background-image: $bcg-gray, url(../images/people_office_mob.jpg);
   background-color: $navy-blue;
   background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 @media (min-device-pixel-ratio: 2),
@@ -14,18 +20,16 @@
   }
 }
 
-.hero {
-  text-align: center;
+//.hero {
+//  //  height: 432px;
+//  //  width: 428px;
+//  //  margin-right: auto;
+//  //  margin-left: auto;
 
-  //  height: 432px;
-  //  width: 428px;
-  //  margin-right: auto;
-  //  margin-left: auto;
-
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
+//  //  background-size: cover;
+//  //  background-repeat: no-repeat;
+//  //  background-position: center;
+//}
 
 .mein-title {
   margin: 0 auto;
@@ -81,6 +85,7 @@
 }
 @media screen and (min-width: 480px) {
   .section-general {
+    max-width: 480px;
     background-image: $bcg-gray, url(../images/people_office_tab.jpg);
   }
 
@@ -95,6 +100,7 @@
 //=====================================TABLET===========================================
 @media screen and (min-width: 768px) {
   .section-general {
+    max-width: 768px;
     padding-bottom: 108px;
     background-image: $bcg-gray, url(../images/people_office.jpg);
   }
@@ -107,7 +113,7 @@
     }
   }
   .hero {
-    width: 768px;
+    //max-width: 768px;
   }
 
   .mein-title {
@@ -126,11 +132,10 @@
   .section-general {
     padding-top: 188px;
     padding-bottom: 188px;
-
+    max-width: 1440px;
     height: 600px;
   }
   .hero {
-    width: 1440px;
   }
 
   .mein-title {

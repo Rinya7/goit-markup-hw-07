@@ -615,11 +615,17 @@ header {
   }
 }
 .section-general {
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
   padding-top: 112px;
   padding-bottom: 112px;
   background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people_office_mob.jpg);
   background-color: #2e2f42;
   background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -627,13 +633,6 @@ header {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people_office_mob_2x.jpg);
   }
 }
-.hero {
-  text-align: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
 .mein-title {
   margin: 0 auto;
   width: 318px;
@@ -683,6 +682,7 @@ header {
 
 @media screen and (min-width: 480px) {
   .section-general {
+    max-width: 480px;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people_office_tab.jpg);
   }
 }
@@ -693,6 +693,7 @@ header {
 }
 @media screen and (min-width: 768px) {
   .section-general {
+    max-width: 768px;
     padding-bottom: 108px;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people_office.jpg);
   }
@@ -700,11 +701,6 @@ header {
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .section-general {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office_2x.jpg);
-  }
-}
-@media screen and (min-width: 768px) {
-  .hero {
-    width: 768px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -721,10 +717,8 @@ header {
   .section-general {
     padding-top: 188px;
     padding-bottom: 188px;
+    max-width: 1440px;
     height: 600px;
-  }
-  .hero {
-    width: 1440px;
   }
   .mein-title {
     margin-bottom: 48px;
