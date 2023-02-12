@@ -1,7 +1,7 @@
 .section-general {
   padding-top: 112px;
   padding-bottom: 112px;
-  background-image: $bcg-gray, url(../../images/people_office_mob.jpg);
+  background-image: $bcg-gray, url(../images/people_office_mob.jpg);
   background-color: $navy-blue;
   background-position: 50% 50%;
 }
@@ -10,7 +10,7 @@
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .section-general {
-    background-image: $bcg-gray, url(../../images/people_office_mob_2x.jpg);
+    background-image: $bcg-gray, url(../images/people_office_mob_2x.jpg);
   }
 }
 
