@@ -617,14 +617,14 @@ header {
 .section-general {
   padding-top: 112px;
   padding-bottom: 112px;
-  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../../images/people_office_mob.jpg);
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people_office_mob.jpg);
   background-color: #2e2f42;
   background-position: 50% 50%;
 }
 
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .section-general {
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../../images/people_office_mob_2x.jpg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people_office_mob_2x.jpg);
   }
 }
 .hero {
@@ -683,23 +683,23 @@ header {
 
 @media screen and (min-width: 480px) {
   .section-general {
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../../images/people_office_tab.jpg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people_office_tab.jpg);
   }
 }
 @media screen and (min-width: 480px) and (min-device-pixel-ratio: 2), screen and (min-width: 480px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 480px) and (min-resolution: 192dpi), screen and (min-width: 480px) and (min-resolution: 2dppx) {
   .section-general {
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../../images/people_office_tab_2x.jpg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people_office_tab_2x.jpg);
   }
 }
 @media screen and (min-width: 768px) {
   .section-general {
     padding-bottom: 108px;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../../images/people_office.jpg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people_office.jpg);
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .section-general {
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../../images/people-office_2x.jpg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office_2x.jpg);
   }
 }
 @media screen and (min-width: 768px) {
@@ -814,16 +814,16 @@ header {
     background-position: center;
   }
   .features-list .icon-strategy::before {
-    background-image: url(../../images/antenna_1.svg), linear-gradient(rgb(244, 244, 253), rgb(244, 244, 253));
+    background-image: url(../images/antenna_1.svg), linear-gradient(rgb(244, 244, 253), rgb(244, 244, 253));
   }
   .features-list .icon-punctuality::before {
-    background-image: url(../../images/clock_1.svg), linear-gradient(rgb(244, 244, 253), rgb(244, 244, 253));
+    background-image: url(../images/clock_1.svg), linear-gradient(rgb(244, 244, 253), rgb(244, 244, 253));
   }
   .features-list .icon-diligency::before {
-    background-image: url(../../images/diagram_1.svg), linear-gradient(rgb(244, 244, 253), rgb(244, 244, 253));
+    background-image: url(../images/diagram_1.svg), linear-gradient(rgb(244, 244, 253), rgb(244, 244, 253));
   }
   .features-list .icon-technologies::before {
-    background-image: url(../../images/astronaut_1.svg), linear-gradient(rgb(244, 244, 253), rgb(244, 244, 253));
+    background-image: url(../images/astronaut_1.svg), linear-gradient(rgb(244, 244, 253), rgb(244, 244, 253));
   }
 }
 /* ==============What are we doing================= */
@@ -1253,7 +1253,7 @@ header {
     margin-left: 16px;
     margin-right: 24px;
     border-color: inherit;
-    background-image: url("../../images/telegram.svg");
+    background-image: url("../images/telegram.svg");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -1376,7 +1376,7 @@ header {
   position: absolute;
   width: 16px;
   height: 16px;
-  background-image: url(../../images/checkbox.svg);
+  background-image: url(../images/checkbox.svg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -1384,7 +1384,7 @@ header {
 }
 
 .checkbox:checked + .checkbox-icon {
-  background-image: url(../../images/checkbox-yes.svg);
+  background-image: url(../images/checkbox-yes.svg);
 }
 
 /* =============END=INPUT-ICONS======= */

@@ -642,7 +642,7 @@ img {
     margin-left: 16px;
     margin-right: 24px;
     border-color: inherit;
-    background-image: url("../../images/telegram.svg");
+    background-image: url("../images/telegram.svg");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
