@@ -263,6 +263,10 @@ img {
   width: 100%;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 .is-hidden-mobil {
   opacity: 0;
   pointer-events: none;
