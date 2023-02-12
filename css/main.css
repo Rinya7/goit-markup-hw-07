@@ -263,6 +263,11 @@ img {
   width: 100%;
 }
 
+.is-hidden-mobil {
+  opacity: 0;
+  pointer-events: none;
+}
+
 .link,
 .logo {
   text-decoration: none;
@@ -324,6 +329,12 @@ header {
 }
 
 /* ==========================Site nav=============== */
+.header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .site-nav {
   display: flex;
 }
@@ -391,11 +402,112 @@ header {
     background-position: center;
   }*/
 /* ===============ICONS HEADER ==END============ */
+.icon-mobile-menu {
+  stroke: #2e2f42;
+}
+
+.mobile-menu-btn {
+  background-color: inherit;
+  border: none;
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  max-width: 768px;
+  height: 100vh;
+  padding: 80px 30px 40px 30px;
+  background-color: #ffffff;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
+.mobmenu-btn-close {
+  position: absolute;
+  display: flex;
+  top: 40px;
+  right: 40px;
+  margin: 0;
+  padding: 0;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #e7e9fc;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  align-items: center;
+  justify-content: center;
+  transition: background-color 250ms var(--time-function);
+}
+
+.mobile-menu-nav {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow-y: scroll;
+}
+
+.mobele-menu-list .link {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.1111111111;
+  color: #2e2f42;
+}
+
+.mobele-menu-list .item:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.mobele-menu-list .current {
+  color: #404bbf;
+}
+
+.mobile-menu-contacts .phone {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.11;
+  color: #4d5ae5;
+  margin-bottom: 40px;
+}
+
+.mobile-menu-contacts .mail {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #434455;
+}
+
+.mobile-menu-contacts .item:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.mobile-menu-contacts {
+  margin-bottom: 48px;
+}
+
+.mob-social {
+  display: flex;
+}
+
+.mob-social .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+@media screen and (min-width: 480px) {
+  .mobile-menu {
+    padding: 80px 40px 40px 40px;
+  }
+  .mobile-menu-contacts .phone {
+    font-size: 36px;
+  }
+  .mob-social .item:not(:last-child) {
+    margin-right: 56px;
+  }
+}
 @media screen and (min-width: 768px) {
-  .header-flex {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  .mobile-menu-btn {
+    display: none;
   }
   .site-nav .logo {
     margin-right: 120px;

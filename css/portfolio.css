@@ -263,6 +263,11 @@ img {
   width: 100%;
 }
 
+.is-hidden-mobil {
+  opacity: 0;
+  pointer-events: none;
+}
+
 .link,
 .logo {
   text-decoration: none;
