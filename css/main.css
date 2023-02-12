@@ -635,7 +635,7 @@ header {
 }
 .mein-title {
   margin: 0 auto;
-  width: 318px;
+  max-width: 318px;
   margin-bottom: 72px;
   color: #ffffff;
   font-weight: 700;
@@ -706,7 +706,7 @@ header {
 @media screen and (min-width: 768px) {
   .mein-title {
     margin: 0 auto;
-    width: 494px;
+    max-width: 494px;
     margin-bottom: 40px;
     color: #ffffff;
     font-size: 56px;
