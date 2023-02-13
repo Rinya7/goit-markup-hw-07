@@ -226,7 +226,7 @@ header {
   .link.current::after {
     content: "";
     position: absolute;
-    bottom: -1px;
+    bottom: -4px;
     left: 0;
     display: block;
     width: 100%;
@@ -244,9 +244,9 @@ header {
     font-weight: 500;
   }
 
-  .site-nav .link:is(:hover, :focus) {
-    color: $ocean;
-  }
+  //  .site-nav .link:is(:hover, :focus) {
+  //    color: $ocean;
+  //  }
 
   .header-contacts {
     display: block;
@@ -262,16 +262,16 @@ header {
     //display: inline-flex;
     //align-items: center;
 
-    transition: color 250ms $time-function;
+    //transition: color 250ms $time-function;
 
-    color: $slate;
-    font-weight: 400;
+    //color: $slate;
+    //font-weight: 400;
     font-size: 12px;
   }
 
-  .header-contacts .link:is(:hover, :focus) {
-    color: $ocean;
-  }
+  //  .header-contacts .link:is(:hover, :focus) {
+  //    color: $ocean;
+  //  }
 }
 
 //========================================DESCTOP============================================
@@ -298,14 +298,14 @@ header {
     border-radius: 2px;
   }
 
-  .site-nav .link {
-    display: block;
+  //  .site-nav .link {
+  //    display: block;
 
-    color: $navy-blue;
-    transition: color 250ms $time-function;
+  //    color: $navy-blue;
+  //    transition: color 250ms $time-function;
 
-    font-weight: 500;
-  }
+  //    font-weight: 500;
+  //  }
 
   .site-nav .link:is(:hover, :focus) {
     color: $ocean;
