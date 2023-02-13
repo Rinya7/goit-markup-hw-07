@@ -263,9 +263,9 @@ header {
     //align-items: center;
 
     transition: color 250ms $time-function;
-
     color: $slate;
     font-weight: 400;
+
     font-size: 12px;
   }
 
@@ -327,11 +327,10 @@ header {
     padding-top: 24px;
     padding-bottom: 24px;
 
-    color: $slate;
+    //transition: color 250ms $time-function;
+    //color: $slate;
+    //font-weight: 400;
 
-    transition: color 250ms $time-function;
-
-    font-weight: 400;
     font-size: 16px;
   }
 
