@@ -31,6 +31,10 @@
   transition: border-color 250ms $time-function;
 }
 
+.logo-brend {
+  fill: $light-slate;
+}
+
 @media screen and (max-width: 480px) {
 }
 
@@ -93,7 +97,7 @@
   }
 
   .logo-brend {
-    fill: $light-slate;
+    //fill: $light-slate;
     transition: fill 250ms $time-function;
   }
 

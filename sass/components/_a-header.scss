@@ -96,6 +96,7 @@ header {
   width: 100%;
   max-width: 768px;
   height: 100vh;
+  overflow-y: scroll;
   padding: 80px 30px 40px 30px;
 
   background-color: $white;

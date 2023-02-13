@@ -6,9 +6,9 @@
   background-color: $cloud;
 }
 .container-team {
-  min-width: 320px;
-  max-width: 396px;
-  padding: 0 70px;
+  //  min-width: 320px;
+  max-width: 320px;
+  padding: 0 40px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -76,7 +76,12 @@
 //.social .item:not(:last-child) {
 //  margin-right: 24px;
 //}
-
+//@media screen and (min-width: 400px) {
+//  .container-team {
+//    max-width: 370px;
+//    padding: 0 70px;
+//  }
+//}
 @media screen and (min-width: 480px) {
   .container-team {
     max-width: 396px;
