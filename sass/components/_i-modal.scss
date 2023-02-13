@@ -16,7 +16,12 @@
   pointer-events: none;
 }
 
-.form-order {
+.modal {
+  //  min-width: 320px;
+  width: 100%;
+
+  max-width: 392px;
+
   position: absolute;
   top: 50%;
   left: 50%;
@@ -196,24 +201,23 @@ textarea {
   text-decoration: underline;
 }
 
-@media screen and (max-width: 480px) {
-  .form-order {
-    min-width: 320px;
-    width: 95%;
-
-    max-width: 392px;
+@media screen and (max-width: 768px) {
+  .modal {
+    height: 90%;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
   }
 }
 
 @media screen and (min-width: 480px) {
-  .form-order {
-    width: 392px;
-  }
+  //  .form-order {
+  //    width: 392px;
+  //  }
 }
 
 @media screen and (min-width: 768px) {
-  .form-order {
-    width: 408px;
+  .modal {
+    max-width: 408px;
   }
 }
 
