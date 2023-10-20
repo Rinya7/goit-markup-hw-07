@@ -23,7 +23,7 @@ html {
   -webkit-text-size-adjust: 100%; /* 2 */
   -moz-tab-size: 4; /* 3 */
   -o-tab-size: 4;
-     tab-size: 4; /* 3 */
+  tab-size: 4; /* 3 */
 }
 
 /*
@@ -36,7 +36,8 @@ Sections
 */
 body {
   margin: 0; /* 1 */
-  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji"; /* 2 */
+  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji"; /* 2 */
 }
 
 /*
@@ -61,7 +62,7 @@ Add the correct text decoration in Chrome, Edge, and Safari.
 */
 abbr[title] {
   -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted;
+  text-decoration: underline dotted;
 }
 
 /**
@@ -80,7 +81,8 @@ code,
 kbd,
 samp,
 pre {
-  font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace; /* 1 */
+  font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo,
+    monospace; /* 1 */
   font-size: 1em; /* 2 */
 }
 
@@ -154,9 +156,9 @@ select {
 Correct the inability to style clickable types in iOS and Safari.
 */
 button,
-[type=button],
-[type=reset],
-[type=submit] {
+[type="button"],
+[type="reset"],
+[type="submit"] {
   -webkit-appearance: button;
 }
 
@@ -209,7 +211,7 @@ Correct the cursor style of increment and decrement buttons in Safari.
 1. Correct the odd appearance in Chrome and Safari.
 2. Correct the outline style in Safari.
 */
-[type=search] {
+[type="search"] {
   -webkit-appearance: textfield; /* 1 */
   outline-offset: -2px; /* 2 */
 }
@@ -253,7 +255,8 @@ body {
 
 header {
   border-bottom: 1px solid #e7e9fc;
-  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 img {
@@ -266,7 +269,7 @@ img {
 .no-scroll {
   overflow: hidden;
 }
-
+.is-hidden,
 .is-hidden-mobil {
   opacity: 0;
   pointer-events: none;
@@ -425,7 +428,8 @@ header {
   overflow-y: scroll;
   padding: 80px 30px 40px 30px;
   background-color: #ffffff;
-  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .mobmenu-btn-close {
@@ -606,7 +610,11 @@ header {
   margin-left: auto;
   padding-top: 112px;
   padding-bottom: 112px;
-  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people_office_mob.jpg);
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/people_office_mob.jpg);
   background-color: #2e2f42;
   background-position: 50% 50%;
   background-size: cover;
@@ -614,9 +622,16 @@ header {
   background-position: center;
 }
 
-@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
   .section-general {
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people_office_mob_2x.jpg);
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people_office_mob_2x.jpg);
   }
 }
 .mein-title {
@@ -646,7 +661,9 @@ header {
   text-align: center;
   letter-spacing: 0.04em;
   cursor: pointer;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button.order {
@@ -669,24 +686,46 @@ header {
 @media screen and (min-width: 480px) {
   .section-general {
     max-width: 480px;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people_office_tab.jpg);
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people_office_tab.jpg);
   }
 }
-@media screen and (min-width: 480px) and (min-device-pixel-ratio: 2), screen and (min-width: 480px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 480px) and (min-resolution: 192dpi), screen and (min-width: 480px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 480px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 480px) and (-webkit-min-device-pixel-ratio: 2),
+  screen and (min-width: 480px) and (min-resolution: 192dpi),
+  screen and (min-width: 480px) and (min-resolution: 2dppx) {
   .section-general {
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people_office_tab_2x.jpg);
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people_office_tab_2x.jpg);
   }
 }
 @media screen and (min-width: 768px) {
   .section-general {
     max-width: 768px;
     padding-bottom: 108px;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people_office.jpg);
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people_office.jpg);
   }
 }
-@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2),
+  screen and (min-width: 768px) and (min-resolution: 192dpi),
+  screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .section-general {
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office_2x.jpg);
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office_2x.jpg);
   }
 }
 @media screen and (min-width: 768px) {
@@ -714,7 +753,8 @@ header {
   .button:is(:hover, :focus) {
     color: #ffffff;
     background-color: #404bbf;
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
     border: 1px solid transparent;
   }
   .button.order:is(:hover, :focus) {
@@ -763,7 +803,7 @@ header {
     width: calc((100% - 48px) / 2);
     margin: 12px;
   }
-  .features-list .item:nth-last-child(n+3) {
+  .features-list .item:nth-last-child(n + 3) {
     margin-bottom: 72px;
   }
 }
@@ -797,16 +837,20 @@ header {
     background-position: center;
   }
   .features-list .icon-strategy::before {
-    background-image: url(../images/antenna_1.svg), linear-gradient(rgb(244, 244, 253), rgb(244, 244, 253));
+    background-image: url(../images/antenna_1.svg),
+      linear-gradient(rgb(244, 244, 253), rgb(244, 244, 253));
   }
   .features-list .icon-punctuality::before {
-    background-image: url(../images/clock_1.svg), linear-gradient(rgb(244, 244, 253), rgb(244, 244, 253));
+    background-image: url(../images/clock_1.svg),
+      linear-gradient(rgb(244, 244, 253), rgb(244, 244, 253));
   }
   .features-list .icon-diligency::before {
-    background-image: url(../images/diagram_1.svg), linear-gradient(rgb(244, 244, 253), rgb(244, 244, 253));
+    background-image: url(../images/diagram_1.svg),
+      linear-gradient(rgb(244, 244, 253), rgb(244, 244, 253));
   }
   .features-list .icon-technologies::before {
-    background-image: url(../images/astronaut_1.svg), linear-gradient(rgb(244, 244, 253), rgb(244, 244, 253));
+    background-image: url(../images/astronaut_1.svg),
+      linear-gradient(rgb(244, 244, 253), rgb(244, 244, 253));
   }
 }
 /* ==============What are we doing================= */
@@ -850,7 +894,8 @@ header {
 .team-list .worker {
   border-radius: 0px 0px 4px 4px;
   background-color: #ffffff;
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .info .social {
@@ -976,7 +1021,7 @@ header {
 }
 
 @media screen and (max-width: 760px) {
-  .customers-list .item:nth-last-child(n+3) {
+  .customers-list .item:nth-last-child(n + 3) {
     margin-bottom: 64px;
   }
 }
@@ -994,7 +1039,7 @@ header {
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) and (max-width: 1200px) {
-  .customers-list .item:nth-last-child(n+4) {
+  .customers-list .item:nth-last-child(n + 4) {
     margin-bottom: 60px;
   }
 }
@@ -1341,7 +1386,8 @@ header {
   top: 50%;
   left: 16px;
   transform: translateY(-50%);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .label-name:hover .input-icon {
@@ -1454,4 +1500,4 @@ textarea {
   .modal {
     max-width: 408px;
   }
-}/*# sourceMappingURL=main.css.map */
+} /*# sourceMappingURL=main.css.map */
